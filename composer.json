@@ -1,0 +1,27 @@
+{
+    "name": "vinelab/oauth-manager-redis",
+    "description": "Redis keys and Client manager for OAuth",
+    "keywords": ["redis", "oauth"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kinane Domloje",
+            "email": "kinane@vinelab.com",
+            "homepage": "https://es.linkedin.com/in/kinanedomloje",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+
+        "autoload": {
+        "psr-4": {
+            "Vinelab\\Redis\\": "src/"
+        }
+    }
+}
