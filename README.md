@@ -1,1 +1,1 @@
-# oauth-manager-redis
+Redis keys and Client manager for OAuth.
