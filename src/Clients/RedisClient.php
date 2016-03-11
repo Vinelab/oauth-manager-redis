@@ -11,7 +11,17 @@ use Vinelab\Redis\Interfaces\RedisClientInterface;
 class RedisClient implements RedisClientInterface
 {
     public function __construct ($client = null)
+    /**
+     * Magic method.
+     *
+     * @param string method
+     * @param array  arguments
+     *
+     * @return Predis\Response\Status | exception | array
+     */
+    public function __call($method, $arguments)
     {
         return $client ? $client : new Client();
+        return call_user_func_array([$this->client, $method], $arguments);
     }
 }
