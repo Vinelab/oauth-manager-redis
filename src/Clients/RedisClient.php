@@ -12,7 +12,7 @@ class RedisClient implements RedisClientInterface
 {
     private $client;
 
-    public function __construct ($client = null, string $host = '127.0.0.1', int $port = 6379)
+    public function __construct ($client = null, $host = '127.0.0.1', $port = 6379)
     {
         $this->client =  $client ? $client : new Client(['host' => $host, 'port' => $port]);
     }
