@@ -12,6 +12,6 @@ class RedisClient implements RedisClientInterface
 {
     public function __construct ($client = null)
     {
-        return $client ? new Client() : $client;
+        return $client ? $client : new Client();
     }
 }
